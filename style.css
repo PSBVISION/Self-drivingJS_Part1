@@ -1,13 +1,14 @@
 html {
-  height: 100%;
-  width: 100%;
-}
-body{
-	margin: 0px;
-	overflow: hidden;
-	text-align: center;
-	background-color: darkgray;
-}
-#myCanvas{
-	background-color: lightgray;
-}
+	height: 100%;
+	width: 100%;
+  }
+  body{
+	  margin: 0px;
+	  overflow: hidden;
+	  text-align: center;
+	  background-color: darkgray;
+  }
+  #myCanvas{
+	  background-color: lightgray;
+  }
+  

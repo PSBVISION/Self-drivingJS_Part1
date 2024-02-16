@@ -14,7 +14,7 @@ class Controls{
 					this.left = true;
 					break;
 				case "ArrowRight":
-					this.Right = true;
+					this.right = true;
 					break;
 				
 				case "ArrowUp":
@@ -28,23 +28,22 @@ class Controls{
 			}
 		}
 		document.onkeyup = (event)=>{
-			switch(event.key){
-				case "ArrowLeft":
-					this.left = false;
-					break;
-				case "ArrowRight":
-					this.Right =false;
-					break;
+		switch(event.key){
+			case "ArrowLeft":
+				this.left = false;
+				break;
+			case "ArrowRight":
+				this.right =false;
+				break;
 
-				case "ArrowUp":
-					this.forward =false;
-					break;
+			case "ArrowUp":
+				this.forward =false;
+				break;
 
-				case "ArrowDown":
-					this.reverse =false;
-					break;
-
+			case "ArrowDown":
+				this.reverse =false;
+				break;
 			}
 		}
 	}
-};
+}
