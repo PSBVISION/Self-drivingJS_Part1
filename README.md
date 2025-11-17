@@ -2,7 +2,7 @@
 
 Real-time motion planner and autonomous vehicle simulator in the browser, built with WebGL and Three.js.
 
-![Dash](./readme/dash.gif)
+![Dash](./readme/motiv.gif)
 
 This project demonstrates a real-time, on-road, lattice-based autonomous vehicle motion planner in the browser. Many autonomous vehicle motion planners are implemented close to the metal in C or C++, or they utilize computing platforms like CUDA or OpenCL to generate plans in a highly parallel fashion on the GPU. Using WebGL, we can implement similar parallel planning algorithms right in the browser that can run on a variety of moderately-powerful consumer graphics cards. With Three.js, the motion planner can be executed in real-time 3D simulated scenarios.
 
