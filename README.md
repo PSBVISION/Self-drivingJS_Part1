@@ -1,4 +1,4 @@
-# [MOTIV Self-Driving Car Simulator](https://mattbradley.github.io/dash)
+# [MOTIV Self-Driving Car Simulator](https://github.com/PSBVISION/Motiv)
 
 Real-time motion planner and autonomous vehicle simulator in the browser, built with WebGL and Three.js.
 
@@ -60,11 +60,11 @@ Almost all of the motion planner is implemented in GLSL; you can find the shader
 
 ## Browser Support
 
-Dash is currently fully supported only by [Google Chrome](https://www.google.com/chrome/). Chrome is the only browser that supports WebGL 2 in an OffscreenCanvas created by a Web Worker. The planner must be run in a separate thread (using a Web Worker), so that reading planning results back to the CPU doesn't block the simulation.
+Motiv is currently fully supported only by [Google Chrome](https://www.google.com/chrome/). Chrome is the only browser that supports WebGL 2 in an OffscreenCanvas created by a Web Worker. The planner must be run in a separate thread (using a Web Worker), so that reading planning results back to the CPU doesn't block the simulation.
 
 ### Google Chrome
 
-Both hardware acceleration and experimental canvas features must be enabled. Dash works correctly in Google Chrome on both Windows and MacOS. Linux hasn't been tested, but I've seen nothing to lead me to believe that it wouldn't work. Chromium will probably work as well.
+Both hardware acceleration and experimental canvas features must be enabled. Motiv works correctly in Google Chrome on both Windows and MacOS. Linux hasn't been tested, but I've seen nothing to lead me to believe that it wouldn't work. Chromium will probably work as well.
 
 #### Enable hardware acceleration
 
@@ -80,15 +80,15 @@ Experimental canvas features must be enabled in order for OffscreenCanvas to be 
 chrome://flags/#enable-experimental-canvas-features
 ```
 
-If you can see the rotating wood box in [this Three.js example](https://rawgit.com/mrdoob/three.js/dev/examples/webgl_worker_offscreencanvas.html), then all of the correct settings should be enabled for Dash to be fully functional.
+If you can see the rotating wood box in [this Three.js example](https://rawgit.com/mrdoob/three.js/dev/examples/webgl_worker_offscreencanvas.html), then all of the correct settings should be enabled for Motiv to be fully functional.
 
 ### Firefox
 
 OffscreenCanvas can be enabled in Firefox with the `gfx.offscreencanvas.enabled` flag by visiting `about:config`.
 
-However, even with OffscreenCanvas available, Dash doesn't work in Firefox Quantum for Windows. It appears that OffscreenCanvas is not supported in Web Workers, and running the planner causes the tab to crash. See [this Firefox ticket](https://bugzilla.mozilla.org/show_bug.cgi?id=1436036) for more information.
+However, even with OffscreenCanvas available, Motiv doesn't work in Firefox Quantum for Windows. It appears that OffscreenCanvas is not supported in Web Workers, and running the planner causes the tab to crash. See [this Firefox ticket](https://bugzilla.mozilla.org/show_bug.cgi?id=1436036) for more information.
 
-Dash _does_ work in Firefox Quantum for MacOS, though. But the frame rate is so low compared to Chrome, that the simulation is barely runnable.
+Motiv _does_ work in Firefox Quantum for MacOS, though. But the frame rate is so low compared to Chrome, that the simulation is barely runnable.
 
 ### Edge
 
@@ -104,7 +104,7 @@ I haven't had any luck getting the planner to run on a mobile browser. The embed
 
 ## Development
 
-Dash is designed to run completely offline on the `file://` protocol with no local server needed to serve resources. However, if any changes are made, Webpack is used to rebuild the sources into separate app and worker distributions. Development dependencies are downloaded with [npm](https://www.npmjs.com/get-npm).
+Motiv is designed to run completely offline on the `file://` protocol with no local server needed to serve resources. However, if any changes are made, Webpack is used to rebuild the sources into separate app and worker distributions. Development dependencies are downloaded with [npm](https://www.npmjs.com/get-npm).
 
 After making changes, build the project with:
 
@@ -118,6 +118,4 @@ Changes can be watched and rebuilt automatically using:
 npm run watch
 ```
 
-## License
 
-Dash is [MIT licensed](./LICENSE).
